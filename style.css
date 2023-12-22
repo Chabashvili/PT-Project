@@ -19,7 +19,7 @@ a {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f7ebcd;
+    background-color: #1e272e;
     overflow: hidden;
 }
 
@@ -44,10 +44,15 @@ nav {
     gap: 3rem;
 }
 
+.nav-links li {
+    font-size: 21px;
+    color: #ccc;
+}
+
 .link a {
     position: relative;
     padding-bottom: 0.75rem;
-    color: #000;
+    color: #ccc;
 }
 
 .link a::after {
@@ -57,7 +62,7 @@ nav {
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #5933c9;
+    background-color: #00aeff;
     transition: all 0.3s ease;
 }
 
@@ -69,12 +74,13 @@ nav {
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #fff;
-    background-color: #5933c9;
+    background-color: #00aeff;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;
     animation: glow 1s ease-in-out infinite alternate;
+    text-transform: uppercase;
 }
 
 .headerctn {
@@ -82,6 +88,8 @@ nav {
     font-weight: 500;
     text-align: center;
     margin-top: 50px;
+    text-align: center;
+    color: #ccc;
 }
 
 .filter-buttons {
@@ -94,6 +102,7 @@ nav {
     cursor: pointer;
     list-style: none;
     padding: 0;
+    color: #fff;
 }
 
 .bold {
@@ -120,7 +129,7 @@ nav {
 .filter-buttons p {
     position: relative;
     padding-bottom: 0.75rem;
-    color: #000;
+    color: #75d2c2;
 }
 
 .filter-buttons p::after {
@@ -130,7 +139,7 @@ nav {
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #5933c9;
+    background-color: #00aeff;
     transition: all 0.3s ease;
 }
 
@@ -139,7 +148,7 @@ nav {
 }
 
 .headerimg {
-    width: 70%;
+    width: 55%;
     margin: auto;
     transition: all 1.5s ease-in-out;
 }
@@ -151,7 +160,7 @@ nav {
 }
 
 .headerimg:hover {
-    width: 90%;
+    width: 65%;
 }
   @keyframes glow {
     from {
