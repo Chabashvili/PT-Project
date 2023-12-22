@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="https://wiki.playprotanki.com/en/images/e/ef/Logo_small.png" alt="ProTanki Logo">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li onclick="toggleBold(this)" class="link"><a href="#">Home</a></li>
+            <li onclick="toggleBold(this)" class="link"><a href="#">Company</a></li>
+            <li onclick="toggleBold(this)" class="link"><a href="#">Blog</a></li>
+            <li onclick="toggleBold(this)" class="link"><a href="#">Pricing</a></li>
+            <li onclick="toggleBold(this)" class="link"><a href="#">Pages</a></li>
+        </ul>
+
+        <!-- <a class="loginhref" href="#">
+            <button class="login">Sign In</button>
+        </a> -->
+
+        <a class="starthref" href="#">
+            <button class="btn">Get Started</button>
+        </a>
+    </nav>
+
+    <div class="headerimg">
+        <img class="recimg" src="images/Recruitment.png" alt="Recruitment Image">
+    </div>
+
+    <header>
+        <h1 class="headerctn">Currently open positions</h1>
+    </header>
+
+    <div class="filter-buttons">
+        <p onclick="toggleBold(this)" id="filter-item-alljobs" class="alljobs"> <a href="#/alljobs">All Jobs</a></p>
+        <p onclick="toggleBold(this)" id="filter-item-marketing" class="marketing"><a href="#/marketing">Marketing</a></p>
+        <p onclick="toggleBold(this)" id="filter-item-engineering" class="engineering"><a href="#/engineering">Engineering</a></p>
+        <p onclick="toggleBold(this)" id="filter-item-product" class="product"><a href="#/product">Product</a></p>
+        <p onclick="toggleBold(this)" id="filter-item-sales" class="sales"><a href="#/sales">Sales</a></p>
+        <p onclick="toggleBold(this)" id="filter-item-operations" class="operations"><a href="#/operations">Operations</a></p>
+    </div>
+    
+    <div class="vertical-line-container">
+        <div class="vertical-line"></div>
+    </div>
+
+    <!-- <div class="card">
+        <div class="firstline">
+           <div class="title">Senior Data Platform Engineer</div>
+           <button class="applybtn">Apply Now</button>
+        </div>
+        <div class="secondary">
+           <div class="info">
+               <p class="engineer">Engineering</p>
+               <p class="location">London, UK</p>
+               <p class="remote">Remote</p>
+           </div>
+           <div class="verticalline">
+            .
+           </div>
+           <div class="description">
+               Yoora CRM offers the most affordable, comprehensive platform to manage the entire customer journey, from generating leads, to closing deals
+               and supporting your customers. With a full suite of CRM.
+           </div>
+        </div>
+    </div> -->
+
+    <script src="app.js"></script>
+</body>
+</html>
