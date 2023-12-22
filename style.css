@@ -20,7 +20,6 @@ a {
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #1e272e;
-    overflow: hidden;
 }
 
 nav {
@@ -172,14 +171,31 @@ nav {
     }
 }
 
+.filter-obj {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 15%;
+}
+
+.filter-obj img {
+    width: 80%;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.position {
+    display: none;
+}
 
 
 
 
 
 
-
-
+/* CARD */
 
 
 /* .card {

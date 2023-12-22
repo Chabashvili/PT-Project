@@ -21,11 +21,6 @@
             <li onclick="toggleNav(this)" class="link"><a href="#" target="_blank">Recruitment</a></li>
             <li onclick="toggleNav(this)" class="link"><a href="https://playprotanki.com/en" target="_blank">Game Site</a></li>
             <li onclick="toggleNav(this)" class="link"><a href="https://wiki.playprotanki.com/en/Main_Page" target="_blank">Wiki</a></li>
-
-            <!-- MORE BUTTONS IF NEEDED -->
-
-            <!-- <li onclick="toggleNav(this)" class="link"><a href="#">Pricing</a></li>
-            <li onclick="toggleNav(this)" class="link"><a href="#">Pages</a></li> -->
         </ul>
 
         <a class="starthref" href="#">
@@ -42,17 +37,50 @@
     </header>
 
     <div class="filter-buttons">
-        <p onclick="toggleBold(this)" id="filter-item-alljobs" class="alljobs"> <a href="#/alljobs">All Positions</a></p>
-        <p onclick="toggleBold(this)" id="filter-item-marketing" class="marketing"><a href="#/marketing">Open</a></p>
-        <p onclick="toggleBold(this)" id="filter-item-engineering" class="engineering"><a href="#/engineering">Priority</a></p>
-        <p onclick="toggleBold(this)" id="filter-item-product" class="product"><a href="#/product">Medium importance</a></p>
-        <p onclick="toggleBold(this)" id="filter-item-sales" class="sales"><a href="#/sales">Secondary</a></p>
-        <p onclick="toggleBold(this)" id="filter-item-operations" class="operations"><a href="#/operations">Closed</a></p>
+        <p onclick="toggleBold(this); filterObjects('all')" id="filter-item-alljobs" class="alljobs filterbtn" class=""> <a href="#/alljobs">All Positions</a></p>
+        <p onclick="toggleBold(this); filterObjects('open')" id="filter-item-marketing" class="marketing filterbtn"><a href="#/marketing">Open</a></p>
+        <p onclick="toggleBold(this); filterObjects('priority')" id="filter-item-engineering" class="engineering filterbtn"><a href="#/engineering">Priority</a></p>
+        <p onclick="toggleBold(this); filterObjects('importance')" id="filter-item-product" class="product filterbtn"><a href="#/product">Medium importance</a></p>
+        <p onclick="toggleBold(this); filterObjects('secondary')" id="filter-item-sales" class="sales filterbtn"><a href="#/sales">Secondary</a></p>
+        <p onclick="toggleBold(this); filterObjects('closed')" id="filter-item-operations" class="operations filterbtn"><a href="#/operations">Closed</a></p>
     </div>
-    
+
     <div class="vertical-line-container">
         <div class="vertical-line"></div>
     </div>
+
+    <div class="filter-obj">
+        <div class="position open priority">
+            <img src="images/GameModerator.png" alt="Chat Moderator">
+        </div>
+        <div class="position closed">
+            <img src="images/DiscordModerator.png" alt="Discord Moderator">
+        </div>
+        <div class="position open priority">
+            <img src="images/WikiEditor.png" alt="Wiki Editor">
+        </div>
+        <div class="position open importance">
+            <img src="images/EventHelper.png" alt="Event Helper">
+        </div>
+        <div class="position open importance">
+            <img src="images/ContestOrganizer.png" alt="Contest Organizer">
+        </div>
+        <div class="position closed">
+            <img src="images/ParkourOrganizer.jpeg" alt="Parkour Organizer">
+        </div>
+        <div class="position closed">
+            <img src="images/eSportHelper.jpeg" alt="eSport Helper">
+        </div>
+        <div class="position open importance">
+            <img src="images/MediaTeam.png" alt="Media Team">
+        </div>
+        <div class="position closed">
+            <img src="images/RentASpec.png" alt="Rent A Spec">
+        </div>
+    </div>
+
+
+    <!-- CARD -->
 
     <!-- <div class="card">
         <div class="firstline">
@@ -76,5 +104,27 @@
     </div> -->
 
     <script src="app.js"></script>
+
+
+
+
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            filterObjects("all");
+        });
+    
+        function filterObjects(category) {
+            var positions = document.querySelectorAll(".position");
+    
+            positions.forEach(function (position) {
+                position.classList.remove("show");
+    
+                if (category === "all" || position.classList.contains(category)) {
+                    position.classList.add("show");
+                }
+            });
+        }
+    </script> -->
 </body>
 </html>
