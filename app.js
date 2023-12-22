@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 })
 
-function togglenav(navbarclick){
+function toggleNav(navbarclick){
     var filterNav = document.querySelectorAll(".nav-links li");
 
     filterNav.forEach(function(item){
@@ -27,6 +27,17 @@ function togglenav(navbarclick){
 
     navbarclick.classList.add('bold');
 }
+
+// ROUTE FOR NAVBAR --
+
+// document.addEventListener("DOMLoaded", function(){
+//     var defaultRoute2 = window.location.pathname.split('/')[1];
+//     var defaultItem2 = document.querySelector(".nav-links ." + defaultRoute2);
+
+//     if (defaultItem2){
+//         toggleBold(defaultItem2);
+//     }
+// })
 
 // TOGGLE FILTER UNDERLINE --
 
