@@ -32,29 +32,64 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 
 
+// FILTER FUNCTIONAL MAIN
+
+var checkClass = function(){
+    if ($('.position').hasClass('hide')){
+        $('.position').removeClass('hide');
+    }
+};
+$('.allpositions').click(function(){
+    checkClass();
+});
+$('.open').click(function(){
+    $('.position:not(.open)').toggle('hide');
+});
+$('.priority').click(function(){
+    $('.position:not(.priority)').toggle('hide');
+});
+$('.importance').click(function(){
+    $('.position:not(.importance)').toggle('hide');
+});
+$('.secondary').click(function(){
+    $('.position:not(.secondary)').toggle('hide');
+});
+$('.closed').click(function(){
+    $('.position:not(.closed)').toggle('hide');
+});
+
+
+
+
+
+
+
+
+
+
 
 
 // FILTER FUNCTIONAL
 
-const filterButtons = document.querySelectorAll(".filter-buttons button");
-const filterableCards = document.querySelectorAll(".filter-obj .position");
+// const filterButtons = document.querySelectorAll(".filter-buttons button");
+// const filterableCards = document.querySelectorAll(".filter-obj .position");
 
-const filterCards = (e) => {
-    document.querySelector(".filter-buttons .active").classList.remove("active");
-    e.currentTarget.classList.add("active");
+// const filterCards = (e) => {
+//     document.querySelector(".filter-buttons .active").classList.remove("active");
+//     e.currentTarget.classList.add("active");
 
-    const selectedFilter = e.currentTarget.querySelector('a').dataset.name;
+//     const selectedFilter = e.currentTarget.querySelector('a').dataset.name;
 
-    filterableCards.forEach((card) => {
-        card.classList.add("hide");
+//     filterableCards.forEach((card) => {
+//         card.classList.add("hide");
 
-        if (card.dataset.name === selectedFilter || selectedFilter === "all") {
-            card.classList.remove("hide");
-        }
-    });
-};
+//         if (card.dataset.name === selectedFilter || selectedFilter === "all") {
+//             card.classList.remove("hide");
+//         }
+//     });
+// };
 
-filterButtons.forEach((button) => button.addEventListener("click", filterCards));
+// filterButtons.forEach((button) => button.addEventListener("click", filterCards));
 
 
 
