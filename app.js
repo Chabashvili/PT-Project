@@ -56,6 +56,16 @@ const filterCards = (e) => {
 
 filterButtons.forEach((button) => button.addEventListener("click", filterCards));
 
+
+
+
+
+
+
+
+
+
+
 // ROUTE FOR NAVBAR --
 
 // document.addEventListener("DOMLoaded", function(){
