@@ -43,10 +43,12 @@ const filterCards = (e) => {
     document.querySelector(".filter-buttons .active").classList.remove("active");
     e.currentTarget.classList.add("active");
 
+    const selectedFilter = e.currentTarget.querySelector('a').dataset.name;
+
     filterableCards.forEach((card) => {
         card.classList.add("hide");
 
-        if (card.dataset.name === e.currentTarget.dataset.name || e.currentTarget.dataset.name === "all") {
+        if (card.dataset.name === selectedFilter || selectedFilter === "all") {
             card.classList.remove("hide");
         }
     });
