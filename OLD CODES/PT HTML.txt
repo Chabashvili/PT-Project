@@ -37,12 +37,12 @@
     </header>
 
     <div class="filter-buttons">
-        <button onclick="toggleBold(this)" id="filter-item-alljobs" class="alljobs filterbtn"> <a href="#/allpositions" data-name="all">All Positions</a></button>
-        <button onclick="toggleBold(this)" id="filter-item-marketing" class="marketing filterbtn"><a href="#/open" data-name="open">Open</a></button>
-        <button onclick="toggleBold(this)" id="filter-item-engineering" class="engineering filterbtn"><a href="#/priority" data-name="priority">Priority</a></button>
-        <button onclick="toggleBold(this)" id="filter-item-product" class="product filterbtn"><a href="#/mediumimportance" data-name="importance">Medium importance</a></button>
-        <button onclick="toggleBold(this)" id="filter-item-sales" class="sales filterbtn"><a href="#/secondary" data-name="secondary">Secondary</a></button>
-        <button onclick="toggleBold(this)" id="filter-item-operations" class="operations filterbtn"><a href="#/closed" data-name="closed">Closed</a></button>
+        <p onclick="toggleBold(this); filterObjects('all')" id="filter-item-alljobs" class="alljobs filterbtn" class=""> <a href="#/alljobs">All Positions</a></p>
+        <p onclick="toggleBold(this); filterObjects('open')" id="filter-item-marketing" class="marketing filterbtn"><a href="#/marketing">Open</a></p>
+        <p onclick="toggleBold(this); filterObjects('priority')" id="filter-item-engineering" class="engineering filterbtn"><a href="#/engineering">Priority</a></p>
+        <p onclick="toggleBold(this); filterObjects('importance')" id="filter-item-product" class="product filterbtn"><a href="#/product">Medium importance</a></p>
+        <p onclick="toggleBold(this); filterObjects('secondary')" id="filter-item-sales" class="sales filterbtn"><a href="#/sales">Secondary</a></p>
+        <p onclick="toggleBold(this); filterObjects('closed')" id="filter-item-operations" class="operations filterbtn"><a href="#/operations">Closed</a></p>
     </div>
 
     <div class="vertical-line-container">
@@ -50,31 +50,31 @@
     </div>
 
     <div class="filter-obj">
-        <div class="position" data-name="open">
+        <div class="position open priority">
             <img src="images/GameModerator.png" alt="Chat Moderator">
         </div>
-        <div class="position" data-name="closed">
+        <div class="position closed">
             <img src="images/DiscordModerator.png" alt="Discord Moderator">
         </div>
-        <div class="position" data-name="open">
+        <div class="position open priority">
             <img src="images/WikiEditor.png" alt="Wiki Editor">
         </div>
-        <div class="position" data-name="open">
+        <div class="position open importance">
             <img src="images/EventHelper.png" alt="Event Helper">
         </div>
-        <div class="position" data-name="open">
+        <div class="position open importance">
             <img src="images/ContestOrganizer.png" alt="Contest Organizer">
         </div>
-        <div class="position" data-name="closed">
+        <div class="position closed">
             <img src="images/ParkourOrganizer.jpeg" alt="Parkour Organizer">
         </div>
-        <div class="position" data-name="closed">
+        <div class="position closed">
             <img src="images/eSportHelper.jpeg" alt="eSport Helper">
         </div>
-        <div class="position" data-name="open">
+        <div class="position open importance">
             <img src="images/MediaTeam.png" alt="Media Team">
         </div>
-        <div class="position" data-name="closed">
+        <div class="position closed">
             <img src="images/RentASpec.png" alt="Rent A Spec">
         </div>
     </div>

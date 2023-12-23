@@ -125,13 +125,13 @@ nav {
     content: '';
 }
 
-.filter-buttons button {
+.filter-buttons p {
     position: relative;
     padding-bottom: 0.75rem;
     color: #75d2c2;
 }
 
-.filter-buttons button::after {
+.filter-buttons p::after {
     content: "";
     position: absolute;
     height: 2px;
@@ -142,7 +142,7 @@ nav {
     transition: all 0.3s ease;
 }
 
-.filter-buttons button:hover::after {
+.filter-buttons p:hover::after {
     width: 100%;
 }
 
@@ -186,9 +186,11 @@ nav {
     border-radius: 20px;
 }
 
-.filter-obj.hide {
+.position {
     display: none;
 }
+
+
 
 
 
