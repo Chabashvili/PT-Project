@@ -37,48 +37,51 @@
     </header>
 
     <div class="filter-buttons">
-        <button onclick="toggleBold(this)" class="allpositions filterbtn"> <a href="#/allpositions">All Positions</a></button>
-        <button onclick="toggleBold(this)" class="open filterbtn"><a href="#/open">Open</a></button>
-        <button onclick="toggleBold(this)" class="priority filterbtn"><a href="#/priority">Priority</a></button>
-        <button onclick="toggleBold(this)" class="importance filterbtn"><a href="#/mediumimportance">Medium importance</a></button>
-        <button onclick="toggleBold(this)" class="secondary filterbtn"><a href="#/secondary">Secondary</a></button>
-        <button onclick="toggleBold(this)" class="closed filterbtn"><a href="#/closed">Closed</a></button>
+        <button onclick="toggleBold(this,'allpositions')" class="allpositions filterbtn"> <a href="#/allpositions">All Positions</a></button>
+        <button onclick="toggleBold(this, 'open')" class="open filterbtn"><a href="#/open">Open</a></button>
+        <button onclick="toggleBold(this, 'priority')" class="priority filterbtn"><a href="#/priority">Priority</a></button>
+        <button onclick="toggleBold(this, 'importance')" class="importance filterbtn"><a href="#/mediumimportance">Medium importance</a></button>
+        <button onclick="toggleBold(this, 'secondary')" class="secondary filterbtn"><a href="#/secondary">Secondary</a></button>
+        <button onclick="toggleBold(this, 'closed')" class="closed filterbtn"><a href="#/closed">Closed</a></button>
     </div>
 
     <div class="vertical-line-container">
         <div class="vertical-line"></div>
     </div>
 
-    <div class="filter-obj">
-        <div class="position game-moderator">
-            <img src="images/GameModerator.png" alt="Chat Moderator">
+    <div id="filter-obj">
+        <div class="game-moderator">
+            <img src="images/GameModerator.png" alt="Chat Moderator">   // OPEN / priority
         </div>
         <div class="position discord-moderator">
-            <img src="images/DiscordModerator.png" alt="Discord Moderator">
+            <img src="images/DiscordModerator.png" alt="Discord Moderator">  // CLOSED
         </div>
         <div class="position wiki-editor">
-            <img src="images/WikiEditor.png" alt="Wiki Editor">
+            <img src="images/WikiEditor.png" alt="Wiki Editor"> // OPEN  / priority
         </div>
         <div class="position event-helper">
-            <img src="images/EventHelper.png" alt="Event Helper">
+            <img src="images/EventHelper.png" alt="Event Helper">  // OPEN / importance
         </div>
         <div class="position contest-organizer">
-            <img src="images/ContestOrganizer.png" alt="Contest Organizer">
+            <img src="images/ContestOrganizer.png" alt="Contest Organizer"> // OPEN / importance
         </div>
         <div class="position parkour-organizer">
-            <img src="images/ParkourOrganizer.jpeg" alt="Parkour Organizer">
+            <img src="images/ParkourOrganizer.jpeg" alt="Parkour Organizer">  // CLOSED
         </div>
         <div class="position esports-helper">
-            <img src="images/eSportHelper.jpeg" alt="eSport Helper">
+            <img src="images/eSportHelper.jpeg" alt="eSport Helper">  // CLOSED
         </div>
         <div class="position media-team">
-            <img src="images/MediaTeam.png" alt="Media Team">
+            <img src="images/MediaTeam.png" alt="Media Team">  // OPEN / importance
         </div>
         <div class="position rent-a-spec">
-            <img src="images/RentASpec.png" alt="Rent A Spec">
+            <img src="images/RentASpec.png" alt="Rent A Spec">  // CLOSED
+        </div>
+        <div class="position secondary">
+            <p>No positions at the moment</p>
         </div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="app.js?asd"></script>
 </body>
 </html>
