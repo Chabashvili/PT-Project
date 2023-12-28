@@ -1,4 +1,4 @@
-// BOLD VISITED
+// BOLD VISITED / FILTER FUNCTIONAL
 
 function toggleBold(clickedElement, filter) {
     var filterItems = document.querySelectorAll(".filter-buttons button");
@@ -35,6 +35,28 @@ function toggleBold(clickedElement, filter) {
         }
     }
 }
+
+function toggleNav(navbarclick) {
+
+    var filterNav = document.querySelectorAll(".nav-links li");
+
+    filterNav.forEach(function (item) {
+        item.classList.remove('bold');
+    });
+
+    navbarclick.classList.add('bold');
+}
+
+// LINK ROUTE
+
+document.addEventListener("DOMContentLoaded", function () {
+    var defaultRoute = window.location.pathname.split('/')[1];
+    var defaultItem = document.querySelector(".filter-buttons ." + defaultRoute);
+
+    if (defaultItem) {
+        toggleBold(defaultItem);
+    }
+})
 
 
 
@@ -91,27 +113,3 @@ function toggleBold(clickedElement, filter) {
 
 
     //
-
-
-
-function toggleNav(navbarclick) {
-
-    var filterNav = document.querySelectorAll(".nav-links li");
-
-    filterNav.forEach(function (item) {
-        item.classList.remove('bold');
-    });
-
-    navbarclick.classList.add('bold');
-}
-
-// LINK ROUTE
-
-document.addEventListener("DOMContentLoaded", function () {
-    var defaultRoute = window.location.pathname.split('/')[1];
-    var defaultItem = document.querySelector(".filter-buttons ." + defaultRoute);
-
-    if (defaultItem) {
-        toggleBold(defaultItem);
-    }
-})
