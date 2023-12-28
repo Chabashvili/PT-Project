@@ -393,3 +393,88 @@ nav {
     box-shadow: -1px 3px 33px -1px rgba(0, 0, 0, 0.75);
     margin-inline: auto;
   }
+
+  @media screen and (max-width: 912px) {
+    .container1,
+    .container2,
+    .container3,
+    .container4,
+    .container5,
+    .container6,
+    .container7,
+    .container8,
+    .container9 {
+      width: 700px;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .container1,
+    .container2,
+    .container3,
+    .container4,
+    .container5,
+    .container6,
+    .container7,
+    .container8,
+    .container9 {
+      width: 700px;
+      margin-left: 10%;
+    }
+  }
+  
+  @media screen and (max-width: 540px) {
+    .container1,
+    .container2,
+    .container3,
+    .container4,
+    .container5,
+    .container6,
+    .container7,
+    .container8,
+    .container9 {
+      width: 450px;
+    }
+  }
+  
+  @media screen and (max-width: 280px) {
+    .container1,
+    .container2,
+    .container3,
+    .container4,
+    .container5,
+    .container6,
+    .container7,
+    .container8,
+    .container9 {
+      width: 150px;
+    }
+  }
+  
+  @media screen and (max-width: 412px) {
+    .container1,
+    .container2,
+    .container3,
+    .container4,
+    .container5,
+    .container6,
+    .container7,
+    .container8,
+    .container9 {
+      width: 350px;
+    }
+  }
+  
+  @media screen and (max-width: 1280px) {
+    .container1,
+    .container2,
+    .container3,
+    .container4,
+    .container5,
+    .container6,
+    .container7,
+    .container8,
+    .container9 {
+      width: 950px;
+    }
+  }
