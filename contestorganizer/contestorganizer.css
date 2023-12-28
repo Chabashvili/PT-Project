@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1e272e;
+  margin-bottom: 50px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.position-image {
+  width: 1300px;
+  border-radius: 20px;
+  height: 300px;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.titlequest {
+  color: white;
+  width: 900px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.position-img {
+  width: 700px;
+  height: 400px;
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  object-fit: cover;
+  margin-top: 50px;
+  filter: brightness(0.7);
+}
+
+.content {
+  margin-top: 50px;
+  margin-left: 300px;
+}
+
+.todo-description {
+  margin-left: 300px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.list-form {
+  margin-left: 318px;
+  margin-top: 20px;
+  color: #dddddd;
+}
+
+.list-item-form {
+  margin-top: 10px;
+}
+
+.descriptions {
+  margin-top: 50px;
+}
+
+.description-form {
+  font-size: 14px;
+  margin-top: 30px;
+  margin-left: 300px;
+  font-weight: 600;
+  width: 1300px;
+}
+
+.before-apply {
+  font-size: 17px;
+  color: #ff0000;
+  font-weight: bold;
+  margin-top: 60px;
+  letter-spacing: 5px;
+}
+
+.before-apply-description {
+  font-size: 16px;
+  color: #dddddd;
+  margin-top: 20px;
+  word-wrap: break-word;
+}
+
+.apply {
+  text-align: center;
+}
+
+.warning {
+  color: #dddddd;
+  text-align: center;
+  font-style: italic;
+  margin-top: 50px;
+}
+
+.inputs {
+  margin-top: 30px;
+  text-align: center;
+}
+
+input {
+  outline: 0;
+  background: none;
+  border: 1px solid white;
+  padding: 8px;
+  width: 1300px;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.submit-btn {
+  background: none;
+  padding: 15px 30px 15px 30px;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 20px 1px black;
+  transition: all 1s ease-out;
+  letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+  background: none;
+  padding: 20px 35px 20px 35px;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 3px;
+  box-shadow: 2px 3px 25px 2px black;
+  font-size: 15px;
+}
